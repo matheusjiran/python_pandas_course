@@ -1,0 +1,69 @@
+
+import pandas as pd
+
+#save the csv file on a DataFrame format indexing the columns "Name"
+df = pd.read_csv('/content/drive/My Drive/Colab Notebooks/titanic.csv', index_col = "Name")
+
+#save the json file on a DataFrame format
+df = pd.read_json('/content/drive/My Drive/Colab Notebooks/titanic.json')
+
+#return number of rows and columns of frame
+summer.shape
+
+#brief info about df
+summer.info()
+
+#return number of values in DataSeries
+age.count()
+
+#return sum of values in DataSeries
+age.sum()
+
+#return mean of values in DataSeries
+age.mean()
+
+#return a list with all unique values in DataSeries
+age.unique()
+
+#return the number of non-unique values in DataSeries
+age.nunique()
+
+#return the proportion of each value 'label' in the DataSeries, considering NaN values
+age.value_counts(dropna=False, normalize=True)
+
+#return value in row 0
+summer.iloc[0]
+
+#return values in rows 1,2 and 3
+summer.iloc[[1,2,3]]
+
+#return values from row 0 until raw 5 exclusive
+summer.iloc[0:5]
+
+#return age column in DataSeries
+summer["age]
+
+#return x first value in df
+summer.head(x)
+
+#return x last value in df
+summer.tail(x)
+
+#return DataFrame with 'Medal' and 'Event' columns
+summer.loc[:, ["Medal","Event"]]
+
+#return values past x in frame with columns from 'A' to 'D'  
+summer.loc["X":, "A":"D"]
+
+#return value with index = ID, and  columns X and Y
+summer.loc["ID", ["X","Y"]]
+
+#transform dic in a DataSeries 
+sales = pd.Series(dic)
+
+#sort order based on index, 'inplace' changes de variable if True
+sales.sort_index(ascending=True, inplace=True)
+
+#sort order based on values, 'inplace' changes de variable if True
+sales.sort_values(ascending=False,na_position='last', inplace=True)
+
