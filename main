@@ -67,3 +67,14 @@ sales.sort_index(ascending=True, inplace=True)
 #sort order based on values, 'inplace' changes de variable if True
 sales.sort_values(ascending=False,na_position='last', inplace=True)
 
+# boolean comparation of data.series
+df.sex =="male"
+
+#Filter data.frame for a boolean filter
+df[df.sex == "male"]
+
+#Filter using .loc for specified column
+df.loc[df.sex =="male", "age"]
+
+#filter wihtout .loc for specified column
+df[df.sex == "male"]["fare"]
