@@ -78,3 +78,4 @@ df.loc[df.sex =="male", "age"]
 
 #filter wihtout .loc for specified column
 df[df.sex == "male"]["fare"]
+
