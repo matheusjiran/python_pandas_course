@@ -1,0 +1,8 @@
+import pandas as pd
+
+def getdealid(payload):
+  properties = payload.get('properties')
+  df = pd.DataFrame.from_dict(properties)
+  df = pd.DataFrame.transpose(df)
+  deal_id = df.loc["hs_object_id", "value"]
+  return deal_id
